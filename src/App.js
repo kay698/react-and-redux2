@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Ninja from "./Components/Ninjas";
 import "./App.css";
 
+
+// container component
 class App extends Component {
   state = {
     ninjas: [

@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
 
-
-class Ninja extends Component {
-    
-  render () {
-    
-    const {ninjas} = this.props;
-    console.log(ninjas)
+// ui component (turned into a functional component because it does not have a state)
+const Ninja = (props) =>{
+    const {ninjas} = props;
     const ninjaList = ninjas.map(ninja => {
-
       return (
         <div className="App" key = {ninja.id}>
           {/* <h1>hello, i'm a Ninja</h1>; */}
@@ -22,7 +17,7 @@ class Ninja extends Component {
            {ninjaList}
         </div>
     )
-  }
+  
 }
 
 export default Ninja;
