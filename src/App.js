@@ -9,17 +9,17 @@ class App extends Component {
     ninjas: [
       { 
         name: "ko", 
-        age: 9, 
+        age: 16, 
         id: 1
        },
       { 
         name: "kojnjk",
-        age: 909, 
+        age: 22, 
         id: 2 
       },
       { 
         name: "kokj", 
-        age: 90, 
+        age: 40, 
         id: 3 
       }
     ]
