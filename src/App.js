@@ -1,14 +1,35 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Ninja from "./Components/Ninjas";
+import "./App.css";
 
 class App extends Component {
-  render () {
-  return (
-    <div className="App">
-      <h1>hello</h1>
-    </div>
-  );
-}}
+  state = {
+    ninjas: [
+      { 
+        name: "ko", 
+        age: 9, 
+        id: 1
+       },
+      { 
+        name: "kojnjk",
+        age: 909, 
+        id: 2 
+      },
+      { 
+        name: "kokj", 
+        age: 90, 
+        id: 3 
+      }
+    ]
+  };
+  render() {
+    return (
+      <div className="App">
+        <h1>hello</h1>
+        <Ninja ninjas = {this.state.ninjas}/>
+      </div>
+    );
+  }
+}
 
 export default App;
